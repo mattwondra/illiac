@@ -210,9 +210,26 @@ section { margin-bottom: 5%; }
 }
 
 
+#artists .col a:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  padding-bottom: 42.105%;
+  float: left;
+}
+#artists .col-1-4 a:before {
+  padding-bottom: 93.897%;
+}
+
 #artists, #partners { margin: 5% 0 0; }
 #artists .col, #partners .col { padding-bottom: 5%; }
-#artists a { position: relative; display: block; }
+#artists a {
+  position: relative;
+  display: block; 
+  background: #f4f4f4;
+  overflow: hidden;
+}
 #artists span {
   display: block;
   background: rgba(69, 198, 240, 0.85);
