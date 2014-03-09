@@ -47,6 +47,7 @@ p { margin: 0 0 1em; }
   margin: 0 auto;
 }
 
+.truncated-version { display: none; }
 
 section { margin-bottom: 5%; }
 .section-heading {
@@ -290,5 +291,6 @@ section { margin-bottom: 5%; }
     padding: 0;
     white-space: normal;
   }
-  .site-header .section-title { padding-left: 0; }
+  .long-version { display: none; }
+  .truncated-version { display: inline-block; }
 }
