@@ -26,7 +26,11 @@ h1, h2, h3, h4 {
   line-height: 1;
 }
 
-a { text-decoration: none; }
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover, a:focus { color: #45C6F0; }
 
 img {
   max-width: 100%;
@@ -44,7 +48,7 @@ p { margin: 0 0 1em; }
 }
 
 
-
+section { margin-bottom: 5%; }
 .section-heading {
   padding: 1em 0;
   background: #F4F4F4;
@@ -63,10 +67,12 @@ p { margin: 0 0 1em; }
   padding-left: 1em;
 }
 .section-title:before {
-  content: ">";
+  content: "";
   display: inline-block;
-  color: #E01F26;
-  margin-right: 1em;
+  width: 9px;
+  height: 9px;
+  background: url(../img/arrow_sprite.png);
+  margin-right: 0.75em;
 }
 
 
@@ -98,11 +104,20 @@ p { margin: 0 0 1em; }
 
 
 
+.text-large { font-size: 1.286em; }
+.text-larger { font-size: 1.642em; }
+.text-largest { font-size: 2.429em; }
+.blue-color { color: #45C6F0; }
+.red-color { color: #E01F26; }
 
 
 
 
-.site-header { background: #e0e0e0; }
+.site-header {
+  background: #e0e0e0;
+  position: relative;
+  z-index: 1000;
+}
 
 .site-nav { background: #383835; }
 .site-nav a {
@@ -116,7 +131,7 @@ p { margin: 0 0 1em; }
   display: block;
   white-space: nowrap;
 }
-.site-nav a:hover, .site-nav a[href="#about"] { background: #45C6F0; }
+.site-nav a:hover, .site-nav a:focus, .site-nav a[href="#about"] { background: #45C6F0; }
 
 
 .site-banner {
@@ -146,9 +161,56 @@ p { margin: 0 0 1em; }
   white-space: nowrap;
 }
 
+.site-footer {
+  background: #383835;
+  padding: 50px 0;
+  color: #fff;
+}
+.site-footer p { font-size: 0.857em; line-height: 2; }
+.site-footer a { color: #fff; }
+.site-footer a:hover, .site-footer a:focus { color: #E01F26; }
+.footer-heading { 
+  color: #45C6F0;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
 
-#artists { margin-top: 5%; }
-#artists .col { padding-bottom: 5%; }
+
+.top-link-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #383835;
+  z-index: 100;
+}
+
+.top-link {
+  font-family: 'Quicksand', Helvetica Neue, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 0.857em;
+  display: block;
+  padding: 0.75em 1em;
+  color: #fff;
+  background: #383835;
+  text-transform: uppercase;
+  position: absolute;
+  right: 2.5%;
+  top: 0;
+}
+.top-link:before {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  background: url(../img/arrow_sprite.png) right center;
+  margin-right: 0.75em;
+}
+
+
+#artists, #partners { margin: 5% 0 0; }
+#artists .col, #partners .col { padding-bottom: 5%; }
 #artists a { position: relative; display: block; }
 #artists span {
   display: block;
@@ -175,21 +237,23 @@ p { margin: 0 0 1em; }
   border-top: 3px solid rgba(224, 31, 38, 0.6);
   border-bottom: 2px solid #fff;
 }
-#artists a:hover span { background: #45C6F0; }
+#artists a:hover span, #artists a:focus span { background: #45C6F0; }
 #artists .col-1-2 span { font-size: 2.25em; }
 
 
 @media screen and (max-width: 53em) {
-  #about .col-1-2 { width: 100%; }
+  #about .col-1-2, #tickets .col-1-2 { width: 100%; }
   .site-nav .responsive-wrapper { width: 100%; }
   .site-nav .col { width: 33.33%; }
   .site-nav a { padding: 1em 0.5em; }
   #artists span { font-size: 1.25em; }
   #artists .col-1-2 span { font-size: 1.5em; }
   .site-subhead { margin-top: 1em; padding-top: 0.75em; }
+  .site-footer .col-1-4 { width: 100%; margin-bottom: 2em; }
 }
 
 @media screen and (max-width: 45.5em) {
+  #location .col-1-2 { width: 100%; }
   #artists span {
     font-size: 1em;
     padding: 4px;
@@ -227,32 +291,3 @@ p { margin: 0 0 1em; }
     white-space: normal;
   }
 }
-
-
-/*.site-banner {
-  padding: 4% 160px 4% 0;
-  position: relative;
-}
-.site-logo {
-  padding-right: 5%;
-}
-.site-meta {
-  width: 160px;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-.site-subhead {
-  font-family: 'Quicksand', Helvetica Neue, Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  border-top: 2px solid #E01F26;
-  padding-top: 1.5em;
-  margin-top: 1.5em;
-  
-  white-space: nowrap;
-}
-*/
