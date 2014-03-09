@@ -192,7 +192,7 @@ section { margin-bottom: 5%; }
   font-size: 0.857em;
   display: block;
   padding: 0.75em 1em;
-  color: #fff;
+  color: #fff !important;
   background: #383835;
   text-transform: uppercase;
   position: absolute;
@@ -290,4 +290,5 @@ section { margin-bottom: 5%; }
     padding: 0;
     white-space: normal;
   }
+  .site-header .section-title { padding-left: 0; }
 }
