@@ -39,7 +39,7 @@ p { margin: 0 0 1em; }
 .responsive-wrapper {
   /* 1000px/14px = 71.429em, plus 4em padding on both sides */
   max-width: 71.429em;
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -49,7 +49,9 @@ p { margin: 0 0 1em; }
   padding: 1em 0;
   background: #F4F4F4;
   border-top: 2px solid #E01F26;
-  margin-bottom: 50px;
+}
+.responsive-wrapper .section-heading {
+  margin-bottom: 5%;
 }
 
 .section-title {
@@ -69,21 +71,20 @@ p { margin: 0 0 1em; }
 
 
 
-.grid-row {
+.grid {
   overflow: hidden;
-  margin: 0 -25px;
+  margin: 0 -2.5%;
 }
 .grid-no-gutters { margin: 0 !important; }
-.grid-no-gutters [class^='col-'],
-.grid-no-gutters [class*=' col-'] {
+.grid-no-gutters .col {
   padding: 0;
   margin: 0;
 }
 
-[class^='col-'], [class*=' col-'] {
+.col {
   float: left;
   width: 100%;
-  padding: 0 2.5% 5%;
+  padding: 0 2.5%;
   /*  Prevent empty columns from collapsing by adding minimum height */
   min-height: 1px;
 }
@@ -102,6 +103,7 @@ p { margin: 0 0 1em; }
 
 
 .site-header { background: #e0e0e0; }
+
 .site-nav { background: #383835; }
 .site-nav a {
   font-family: 'Quicksand', Helvetica Neue, Arial, Helvetica, sans-serif;
@@ -117,6 +119,36 @@ p { margin: 0 0 1em; }
 .site-nav a:hover, .site-nav a[href="#about"] { background: #45C6F0; }
 
 
+.site-banner {
+  padding: 4% 160px 4% 0;
+  position: relative;
+}
+.site-logo {
+  padding-right: 5%;
+}
+.site-meta {
+  width: 160px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.site-subhead {
+  font-family: 'Quicksand', Helvetica Neue, Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  border-top: 2px solid #E01F26;
+  padding-top: 1.5em;
+  margin-top: 1.5em;
+  
+  white-space: nowrap;
+}
+
+
+#artists { margin-top: 5%; }
+#artists .col { padding-bottom: 5%; }
 #artists a { position: relative; display: block; }
 #artists span {
   display: block;
@@ -147,11 +179,80 @@ p { margin: 0 0 1em; }
 #artists .col-1-2 span { font-size: 2.25em; }
 
 
-@media screen and (max-width: 62em) {
-/*  .responsive-wrapper { padding: 0 10px }
-  .grid-row { margin: 0 -10px; }
-  [class^='col-'], [class*=' col-'] {
-    padding: 0 10px;
-    margin-bottom: 20px;
-  }*/
+@media screen and (max-width: 53em) {
+  #about .col-1-2 { width: 100%; }
+  .site-nav .responsive-wrapper { width: 100%; }
+  .site-nav .col { width: 33.33%; }
+  .site-nav a { padding: 1em 0.5em; }
+  #artists span { font-size: 1.25em; }
+  #artists .col-1-2 span { font-size: 1.5em; }
+  .site-subhead { margin-top: 1em; padding-top: 0.75em; }
 }
+
+@media screen and (max-width: 45.5em) {
+  #artists span {
+    font-size: 1em;
+    padding: 4px;
+  }
+  #artists .col-1-2 span { font-size: 1.25em; }
+  .site-subhead { margin-top: 0.5em; padding-top: 0; border: none;}
+}
+
+@media screen and (max-width: 31em) {
+  #artists .col-1-2 { width: 100%; }
+  #artists .col-1-4 { width: 50%; }
+  #artists span {
+    font-size: 1.25em;
+    padding: 4px;
+  }
+  #artists .col-1-2 span { font-size: 2em; }
+  
+  .site-banner { padding-right: 0; }
+  .site-logo { padding-right: 0; }
+  .site-meta {
+    position: static;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    margin-top: 1em;
+  }
+  .headline-sponsors a { float: right; margin-left: 1em; }
+  .site-subhead {
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    white-space: normal;
+  }
+}
+
+
+/*.site-banner {
+  padding: 4% 160px 4% 0;
+  position: relative;
+}
+.site-logo {
+  padding-right: 5%;
+}
+.site-meta {
+  width: 160px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.site-subhead {
+  font-family: 'Quicksand', Helvetica Neue, Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  border-top: 2px solid #E01F26;
+  padding-top: 1.5em;
+  margin-top: 1.5em;
+  
+  white-space: nowrap;
+}
+*/
