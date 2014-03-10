@@ -132,7 +132,7 @@ section { margin-bottom: 5%; }
   display: block;
   white-space: nowrap;
 }
-.site-nav a:hover, .site-nav a:focus, .site-nav a[href="#about"] { background: #45C6F0; }
+.site-nav a:hover, .site-nav a:focus { background: #45C6F0; }
 
 
 .site-banner {
