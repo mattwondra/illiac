@@ -32,6 +32,8 @@ a {
 }
 a:hover, a:focus { color: #45C6F0; }
 
+p a { text-decoration: underline; }
+
 img {
   max-width: 100%;
   height: auto !important;
@@ -104,7 +106,7 @@ section { margin-bottom: 5%; }
 
 
 
-
+.text-small { font-size: 0.833em; }
 .text-large { font-size: 1.286em; }
 .text-larger { font-size: 1.642em; }
 .text-largest { font-size: 2.429em; }
@@ -167,7 +169,7 @@ section { margin-bottom: 5%; }
   padding: 50px 0;
   color: #fff;
 }
-.site-footer p { font-size: 0.857em; line-height: 2; }
+.site-footer p { font-size: 0.857em; line-height: 1.75; }
 .site-footer a { color: #fff; }
 .site-footer a:hover, .site-footer a:focus { color: #E01F26; }
 .footer-heading { 
@@ -230,6 +232,8 @@ section { margin-bottom: 5%; }
   background: #f4f4f4;
   overflow: hidden;
 }
+/* Need to use <b> for styling hooks */
+#artists b { font-weight: inherit; }
 #artists span {
   display: block;
   background: rgba(69, 198, 240, 0.85);
