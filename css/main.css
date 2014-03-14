@@ -315,3 +315,29 @@ section { margin-bottom: 5%; }
   .long-version { display: none; }
   .truncated-version { display: inline-block; }
 }
+
+
+
+
+.splash {
+  display: block;
+  text-align: center;
+  padding: 10%;
+  max-width: 60em;
+  margin: 0 auto;
+}
+.splash img { margin: 0 auto 2em; }
+.splash h1 {
+  color: #000;
+  font-size: 4em;
+  font-family: 'Open Sans', Helvetica Neue, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  margin-bottom: 0.8em;
+}
+.splash span {
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 22em) {
+/*  .splash h1 { font-size: 3em; }*/
+}
