@@ -1,0 +1,20 @@
+/* White Text for links */
+a { font-family: 'Bree Serif', serif; color : #FFFFFF;  }
+A:link {text-decoration: none}
+A:visited {text-decoration: none}
+A:active {text-decoration: none}
+
+/* White Bold Headline*/
+TxtHeadline { font-family: 'Bree Serif', serif; font-size : 18px; color : #FFFFFF; }
+
+/* Pink for Date & City */
+TxtDetails { font-family: 'Bree Serif', serif; font-size : 12px; color : #E1ACCF; }
+
+/* White Footer for links */
+TxtLinks { font-family: 'Bree Serif', serif; font-size : 18px; color : #FFFFFF; }
+
+/* Schedule Band Name Color=White */
+TxtBand { font-family: 'Bree Serif', serif; font-size : 18px; color : #FFFFFF; padding-left:20px; }
+
+/* Schedule Times Color=Pink*/
+TxtTime { font-family: 'Bree Serif', serif; font-size : 12px; color : #E1ACCF; padding-left:20px; }
