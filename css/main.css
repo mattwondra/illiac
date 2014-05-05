@@ -212,7 +212,7 @@ section { margin-bottom: 5%; }
 }
 
 
-#artists .col a:before {
+.image-link-grid .col a:before {
   content: '';
   display: block;
   width: 0;
@@ -220,21 +220,21 @@ section { margin-bottom: 5%; }
   padding-bottom: 42.105%;
   float: left;
 }
-#artists .col-1-4 a:before {
+.image-link-grid .col-1-4 a:before {
   padding-bottom: 93.897%;
 }
 
-#artists, #partners { margin: 5% 0 0; }
-#artists .col, #partners .col { padding-bottom: 5%; }
-#artists a {
+.image-link-grid, #partners { margin: 5% 0 0; }
+.image-link-grid .col, #partners .col { padding-bottom: 5%; }
+.image-link-grid a {
   position: relative;
   display: block; 
   background: #f4f4f4;
   overflow: hidden;
 }
 /* Need to use <b> for styling hooks */
-#artists b { font-weight: inherit; }
-#artists span {
+.image-link-grid b { font-weight: inherit; }
+.image-link-grid span {
   display: block;
   background: rgba(69, 198, 240, 0.85);
   position: absolute;
@@ -250,7 +250,7 @@ section { margin-bottom: 5%; }
   color: #fff;
   text-transform: uppercase;
 }
-#artists span:before {
+.image-link-grid span:before {
   content: '';
   position: absolute;
   width: 100%;
@@ -259,8 +259,8 @@ section { margin-bottom: 5%; }
   border-top: 3px solid rgba(224, 31, 38, 0.6);
   border-bottom: 2px solid #fff;
 }
-#artists a:hover span, #artists a:focus span { background: #45C6F0; }
-#artists .col-1-2 span { font-size: 2.25em; }
+.image-link-grid a:hover span, .image-link-grid a:focus span { background: #45C6F0; }
+.image-link-grid .col-1-2 span { font-size: 2.25em; }
 
 
 @media screen and (max-width: 53em) {
@@ -268,30 +268,30 @@ section { margin-bottom: 5%; }
   .site-nav .responsive-wrapper { width: 100%; }
   .site-nav .col { width: 33.33%; }
   .site-nav a { padding: 1em 0.5em; }
-  #artists span { font-size: 1.25em; }
-  #artists .col-1-2 span { font-size: 1.5em; }
+  .image-link-grid span { font-size: 1.25em; }
+  .image-link-grid .col-1-2 span { font-size: 1.5em; }
   .site-subhead { margin-top: 1em; padding-top: 0.75em; }
   .site-footer .col-1-4 { width: 100%; margin-bottom: 2em; }
 }
 
 @media screen and (max-width: 45.5em) {
   #location .col-1-2 { width: 100%; }
-  #artists span {
+  .image-link-grid span {
     font-size: 1em;
     padding: 4px;
   }
-  #artists .col-1-2 span { font-size: 1.25em; }
+  .image-link-grid .col-1-2 span { font-size: 1.25em; }
   .site-subhead { margin-top: 0.5em; padding-top: 0; border: none;}
 }
 
 @media screen and (max-width: 31em) {
-  #artists .col-1-2 { width: 100%; }
-  #artists .col-1-4, #artists .col-1-3 { width: 50%; }
-  #artists span {
+  .image-link-grid .col-1-2 { width: 100%; }
+  .image-link-grid .col-1-4, .image-link-grid .col-1-3 { width: 50%; }
+  .image-link-grid span {
     font-size: 1.25em;
     padding: 4px;
   }
-  #artists .col-1-2 span { font-size: 2em; }
+  .image-link-grid .col-1-2 span { font-size: 2em; }
   
   .site-banner { padding-right: 0; }
   .site-logo { padding-right: 0; }
